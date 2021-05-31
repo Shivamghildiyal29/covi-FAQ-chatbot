@@ -1,0 +1,159 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- covid_introduction:
+    use_entities: true
+- covid_spreading:
+    use_entities: true
+- covid_symptoms:
+    use_entities: true
+- covid_prevention:
+    use_entities: true
+- covid_food:
+    use_entities: true
+- covid_vaccination:
+    use_entities: true
+- after_vaccination:
+    use_entities: true
+- covid_risk:
+    use_entities: true
+- covid_mask:
+    use_entities: true
+- covid_cleaning:
+    use_entities: true
+- covid_mutation:
+    use_entities: true
+- covid_precaution:
+    use_entities: true
+- covid_children:
+    use_entities: true
+- covid_test:
+    use_entities: true
+- fungus:
+    use_entities: true
+- fungus_effects:
+    use_entities: true
+- black_fungus:
+    use_entities: true
+- yellow_fungus:
+    use_entities: true
+- white_fungus:
+    use_entities: true
+- fungus_symptoms:
+    use_entities: true
+- fungus_prevention:
+    use_entities: true
+- immunity:
+    use_entities: true
+- herd_immunity:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_goodbye:
+  - text: Bye and keep that mask on.
+  utter_covid_introduction:
+  - text: Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
+  utter_covid_spreading:
+  - text: The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air and quickly fall on floors or surfaces. You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose, or mouth.
+  utter_covid_prevention:
+  - text: |-
+      1. Clean your hands often. Use soap and water, or an alcohol-based hand rub. 
+       2. Maintain a safe distance from anyone who is coughing or sneezing.
+       3. Wear a mask when physical distancing is not possible.
+       4. Don’t touch your eyes, nose, or mouth.
+       4. Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.     
+       5. Stay home if you feel unwell.
+       6. Stay home if you are well too.
+       7. If you have a fever, cough, and difficulty breathing, seek medical attention.
+  utter_covid_food:
+  - text: |-
+      Every day, eat a combination of different foods including whole grains such as wheat, maize and rice, legumes like lentils and beans, fruit and vegetables and some foods from animal sources (e.g. meat, fish, eggs and milk).
+       Eat plenty of fruit and vegetables: 
+          1. Eat fresh fruit and vegetables that are in season. 
+                                                                                                                             2.  Eat a variety of fruit and vegetables. 
+       Keep salt intake to less than 5 g per day (approximately 1 teaspoon):
+          1. Use less salt during cooking and preparing food and use iodized salt.
+          2. Check the labels on food and choose products with lower sodium content.
+          3. Limit processed and prepackaged foods, which can be full of hidden sodium.
+          4. Remove the salt shaker from the table, and instead use fresh or dried herbs and spices for added flavor.
+  utter_covid_vaccination:
+  - text: Two vaccines were granted emergency use authorization by the Central Drugs Standard Control Organization (CDSCO) in India, Covishield® (AstraZeneca's vaccine manufactured by Serum Institute of India) and Covaxin® (manufactured by Bharat Biotech Limited). Sputnik - V has been granted EUA in the month of April 2021. The time interval between two doses of the Covishield vaccine has been extended from four-eight weeks to 12-16 weeks. The second dose of Covaxin can be taken four to six weeks after the first.
+  utter_after_vaccination:
+  - text: |-
+      COVID-19 vaccines are effective. However, a small percentage of people who are fully vaccinated will still get COVID-19 if they are exposed to the virus that causes it. These are called “vaccine breakthrough cases.”  This means that while people who have been vaccinated are much less likely to get sick, it may still happen.                                                                                                                                                                                    
+                                                                                                                                                                                                                   
+       To further reduce the chances of reinfection, please follow the safety protocols and wear masks.
+  utter_covid_risk:
+  - text: 'Anyone can get COVID-19, and most infections are mild. The older you are, the higher your risk of severe illness.                                                                                                                                                                                                                                                                            You also have a higher chance of serious illness if you have one of these health conditions:                                                                                                                                       1. Chronic kidney disease                                                                                                                                                                                                                                                                             2. Chronic obstructive pulmonary disease (COPD)                                                                                                                                       3. A weakened immune system because of an organ transplant.                                                                                                                                      4. Obesity                                                                                                                                                                                          5. Serious heart conditions such as heart failure or coronary artery disease                                                                                                                                      6. Sickle cell disease                                                                                                                                                                                                                                                                            7. Type 2 diabetes                                                                                                                                                                                                                                                                                     Conditions that could lead to severe COVID-19 illness includes:                                                                                                                                    1. Moderate to severe asthma                                                                                                                                                                                                                                                                             2. Diseases that affect your blood vessels and blood flow to your brain\n 3. Cystic fibrosis                                                                                                                                       4. High blood pressure                                                                                                                                                                                                                                                                             5. A weakened immune system because of a blood or bone marrow transplant, HIV, or medications like corticosteroids                                                                                                                                                                                                                                                                             6. Dementia                                                                                                                                                                                                                                                                            7. Liver disease                                                                                                                                                                                                                                                                            8.
+      Pregnancy                                                                                                                                                                                                                                                                             9. Damaged or scarred lung tissue (pulmonary fibrosis)                                                                                                                                                                                                                                                                            10. Smoking                                                                                                                                                                                                                                                                            11. Thalassemia                                                                                                                                                                                                                                                                             12. Type 1 diabetes.'
+  utter_covid_mask:
+  - text: Masks can help prevent the spread of the virus from the person wearing the mask to others. Masks alone do not protect against COVID-19 and should be combined with physical distancing and hand hygiene. Follow the advice provided by your local health authority.
+  utter_covid_cleaning:
+  - text: 1. The disinfectant and its concentration should be carefully selected to avoid damaging surfaces and to avoid or minimize toxic effects on household members (or users of public spaces). \n 2. Avoid combining disinfectants, such as bleach and ammonia, since mixtures can cause respiratory irritation and release potentially fatal gases.\n 3. Keep children, pets, and other people away during the application of the product until it is dry and there is no odour.\n 4. Open windows and use fans to ventilate. Step away from odours if they become too strong. Disinfectant solutions should always be prepared in well-ventilated areas.\n 5. Wash your hands after using any disinfectant, including surface wipes.\n 6. Keep lids tightly closed when not in use. Spills and accidents are more likely to happen when containers are open.\n 7. Do not allow children to use disinfectant wipes. Keep cleaning fluids and disinfectants out of the reach of children and pets.\n 8. Throw away disposable items like gloves and masks if they are used during cleaning. Do not clean and re-use.\n 9. The minimum recommended personal protective equipment when disinfecting in non-healthcare settings is rubber gloves, waterproof aprons, and closed shoes. Eye protection and medical masks may also be needed to protect against chemicals in use or if there is a risk of splashing.
+  utter_covid_precaution:
+  - text: Preventive measures for COVID-19 (including vaccination, wearing a mask, and social distancing) are important especially if you are older or have multiple or severe health conditions. You can learn about CDC’s COVID-19 vaccine recommendations, including how medical conditions and other factors inform recommendations at https://www.mohfw.gov.in/covid_vaccination/vaccination/index.html.
+  utter_covid_children:
+  - text: It is well documented that children are less commonly affected by this infection and the majority of them are asymptomatic or mildly symptomatic. A small proportion (<10%- 20%) of symptomatic children may need hospitalization and 1% to 3% of symptomatic children may have a severe illness requiring intensive care admission. Direct person-to-person transmission occurs through close contact, mainly through respiratory droplets that are released when the infected person coughs, sneezes or talks. These droplets may also land on surfaces where the virus remains viable. The median incubation period is 5.1 days (range 2 to 14 days). As per current evidence, the period of infectivity starts 2 days prior to the onset of symptoms and lasts up to 8 days.
+  utter_fungus:
+  - text: A fungus is any member of the group of eukaryotic organisms that includes microorganisms such as yeasts and molds, as well as the more familiar mushrooms. A fungus that invades the tissue can cause a disease that's confined to the skin, spreads into tissue, bones, and organs or affects the whole body.
+  utter_black_fungus:
+  - text: Mucormycosis, colloquially known as black fungus, is a serious fungal infection that was seen in far smaller numbers in India before Covid-19, too. But it is now affecting post-Covid patients in large numbers.
+  utter_white_fungus:
+  - text: White fungus is more dangerous than black fungus because it affects the lungs badly and can also cause damage to other body parts. The white fungus can become lethal and may impact the brain, respiratory system, digestive tract.
+  utter_yellow_fungus:
+  - text: Yellow fungus, which normally affects reptiles, is more dangerous than white and black fungus. If left treated, the yellow fungus infection can cause death too. Yellow fungus infection is mainly caused by bad hygiene.
+  utter_fungus_effects:
+  - text: Black fungus can cause discoloration over the nose, blurred vision, one-sided facial pain, toothache, chest pain, and breathlessness.\n \n White fungus affects lungs and can cause chest pain, cough, and breathlessness. The white fungus can cause headaches, pains, infections, or even cause swelling.\n \n Yellow fungus can also cause leakage of pus and slow healing of the open wound and slow healing of all wounds, malnutrition and organ failure, and sunken eyes due to eventual necrosis.
+  utter_fungus_symptoms:
+  - text: Black fungus is causing serious problems for people recovering from COVID.  Black fungus can cause discoloration over the nose, blurred vision, one-sided facial pain, toothache, chest pain, and breathlessness.\n \n The symptoms of white fungus are quite similar to COVID-19 symptoms. It affects the lungs and can cause chest pain, cough, and breathlessness. White fungus can also cause headaches, pains, infections, or even cause swelling.\n \n Symptoms of yellow fungus are laziness, loss of appetite, or no appetite at all, and weight loss. In serious cases, the yellow fungus can also cause leakage of pus and slow healing of the open wound and slow healing of all wounds, malnutrition and organ failure, and sunken eyes due to eventual necrosis.
+  utter_fungus_prevention:
+  - text: While in hospital 1. Maintain good hygiene and cleanliness in your surroundings. 2. Maintain oral hygiene care with mouthwash, povidone-iodine gargles. 3. Use sterile water for humidification while administering oxygen, there should be no leakage from the humidifier. 4. Steroids usage should be limited not more than necessary with strict blood glucose control. 5. Avoid unnecessary use of broad-spectrum antibiotics or antifungals, can result in the growth of unwanted bacteria or organisms. After recovering from COVID-19 1. Maintain your surroundings clean and free from dust and dampness. 2. Maintain your oral and nasal hygiene. 3. Try to stay indoors and do regular exercise or work out. 4. void construction areas, fields, and grounds. 5. Avoid gardening as soil and plants abound with fungi. Use rubber gloves, masks, and boots, if unavoidable.
+  utter_immunity:
+  - text: Immunity is the capability of multicellular organisms to resist harmful microorganisms. Immunity involves both specific and nonspecific components. The nonspecific components act as barriers or eliminators of a wide range of pathogens irrespective of their antigenic make-up. Other components of the immune system adapt themselves to each new disease encountered and can generate pathogen-specific immunity.
+  utter_herd_immunity:
+  - text: Herd immunity is a form of indirect protection from infectious disease that can occur with some diseases when a sufficient percentage of a population has become immune to an infection, whether through vaccination or previous infections, thereby reducing the likelihood of infection for individuals who lack immunity.
+  utter_covid_test:
+  - text: 1. Real-Time RT PCR for COVID-19 - 1526 (Govt= 588 + Private= 938) 2. TrueNat Test for COVID-19 - 922 (Govt= 631 + Private= 291) 3. CBNAAT Test for COVID-19 - 133 (Govt=  43 + Private=  90) 4. Other Molecular-Nucleic Acid (M-NA) Testing Platforms for COVID-19 - 08 (Govt= 02 + Private= 06)
+  utter_covid_mutation:
+  - text: Viruses constantly change through mutation, and new variants of a virus are expected to occur. Sometimes new variants emerge and disappear. Other times, new variants persist. Multiple variants of the virus that causes COVID-19 have been documented globally during this pandemic.
+  utter_covid_symptoms:
+  - text: Most common symptoms are 1.fever 2. dry cough 3. tiredness Less common symptoms are 1. aches and pains 2. sore throat 3. diarrhoea 4. conjunctivitis 5. headache 6. loss of taste or smell 7. a rash on skin, or discolouration of fingers or toes Serious symptoms are 1. difficulty breathing or shortness of breath 2. chest pain or pressure 3. loss of speech or movement
+actions:
+- utter_greet
+- utter_goodbye
+- utter_covid_introduction
+- utter_covid_spreading
+- utter_covid_prevention
+- utter_covid_food
+- utter_covid_vaccination
+- utter_after_vaccination
+- utter_covid_risk
+- utter_covid_mask
+- utter_covid_cleaning
+- utter_covid_precaution
+- utter_covid_children
+- utter_fungus
+- utter_black_fungus
+- utter_white_fungus
+- utter_yellow_fungus
+- utter_fungus_effects
+- utter_fungus_symptoms
+- utter_fungus_prevention
+- utter_immunity
+- utter_herd_immunity
+- utter_covid_test
+- utter_covid_mutation
+- utter_covid_symptoms
+forms: {}
+e2e_actions: []

@@ -1,0 +1,110 @@
+version: "2.0"
+stories:
+- story: greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+- story: adios
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- story: covid_intro
+  steps:
+  - intent: covid_introduction
+  - action: utter_covid_introduction
+- story: covid_spread
+  steps:
+  - intent: covid_spreading
+  - action: utter_covid_spreading
+- story: covid_prevent
+  steps:
+  - intent: covid_prevention
+  - action: utter_covid_prevention
+- story: covid_food
+  steps:
+  - intent: covid_food
+  - action: utter_covid_food
+- story: after_vaccine
+  steps:
+  - intent: after_vaccination
+  - action: utter_after_vaccination
+- story: risk
+  steps:
+  - intent: covid_risk
+  - action: utter_covid_risk
+- story: masks
+  steps:
+  - intent: covid_mask
+  - action: utter_covid_mask
+- story: cleaning
+  steps:
+  - intent: covid_cleaning
+  - action: utter_covid_cleaning
+- story: precautions
+  steps:
+  - intent: covid_precaution
+  - action: utter_covid_precaution
+- story: children
+  steps:
+  - intent: covid_children
+  - action: utter_covid_children
+- story: fungusgus_s
+  steps:
+  - intent: fungus
+  - action: utter_fungus
+- story: b_fungus
+  steps:
+  - intent: black_fungus
+  - action: utter_black_fungus
+- story: w_fungus
+  steps:
+  - intent: yellow_fungus
+  - action: utter_yellow_fungus
+- story: fungus_symptoms
+  steps:
+  - intent: fungus_symptoms
+  - action: utter_fungus_symptoms
+- story: fungus_effectss
+  steps:
+  - intent: fungus_effects
+  - action: utter_fungus_effects
+- story: fungus_prev
+  steps:
+  - intent: fungus_prevention
+  - action: utter_fungus_prevention
+- story: herd_immunity
+  steps:
+  - intent: herd_immunity
+  - action: utter_herd_immunity
+- story: w_fungus
+  steps:
+  - intent: white_fungus
+  - action: utter_white_fungus
+- story: y_fungus
+  steps:
+  - intent: yellow_fungus
+  - action: utter_yellow_fungus
+- story: immunity
+  steps:
+  - intent: immunity
+  - action: utter_immunity
+- story: covid_test
+  steps:
+  - intent: covid_test
+  - action: utter_covid_test
+- story: children
+  steps:
+  - intent: covid_children
+  - action: utter_covid_children
+- story: mutation
+  steps:
+  - intent: covid_mutation
+  - action: utter_covid_mutation
+- story: covid_symptoms
+  steps:
+  - intent: covid_symptoms
+  - action: utter_covid_symptoms
+- story: vaccine
+  steps:
+  - intent: covid_vaccination
+  - action: utter_covid_vaccination

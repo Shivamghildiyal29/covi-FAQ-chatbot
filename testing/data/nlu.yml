@@ -1,0 +1,173 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hello
+    - Hi
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - bye
+- intent: covid_test
+  examples: |
+    - Covid testing
+    - tests for covid
+    - rtpcr
+    - How can be test for covid 19?
+    - testing
+- intent: white_fungus
+  examples: |
+    - white fungus
+    - symptoms of white fungus
+    - what is white fungus?
+    - effects of white fungus
+    - white fungus
+- intent: covid_symptoms
+  examples: |
+    - covid symptoms
+    - symptoms of corona
+    - symptoms of covid
+    - What are the symptoms of corona?
+    - What are the symptoms of covid 19?
+    - symptoms
+- intent: black_fungus
+  examples: |
+    - symptoms of black fungus
+    - black fundus
+    - what is black fungus?
+    - effects of black fungus
+    - black fungus
+- intent: yellow_fungus
+  examples: |
+    - symptoms of  yellow fungus
+    - yellow fungus
+    - what is yellow fungus?
+    - effects of yellow fungus
+- intent: covid_mutation
+  examples: |
+    - mutation of corona
+    - variation of corona
+    - variation
+    - variants of corona
+- intent: covid_introduction
+  examples: |
+    - what is covid-19?
+    - what is corona virus?
+    - what is novel corona virus?
+    - can you tell me about covid
+    - tell me about corona
+    - what is covid-19  ?
+    - covid 19
+    - corona disease
+    - corona     -
+    - corona virus
+    - corona
+- intent: covid_spreading
+  examples: |
+    - Causes of virus spreading?
+    - What is community spread?
+    - community spread
+    - How does covid 19 spread?
+    - How does corona spread?
+    - How does corona virus spread?
+    - How does it spread?
+- intent: covid_prevention
+  examples: |
+    - How can i save myself from Covid 19?
+    - How can i save myself from corona virus?
+    - How can i save myself from Covid 19 virus?
+    - covid prevention
+    - peventions
+- intent: covid_food
+  examples: |
+    - food
+    - covid from food
+    - food in covid
+- intent: covid_vaccination
+  examples: |
+    - covid vaccination
+    - vaccine
+    - covid vaccine
+    - corona vaccine
+    - vaccination
+    - vaccination
+    - vaccine
+- intent: after_vaccination
+  examples: |
+    - what happens after vaccination?
+    - post vaccination
+    - after vaccination
+- intent: covid_risk
+  examples: |
+    - high risk
+    - risk of corona visus
+    - risk of covid virus
+    - who is at risk of covid virus?
+    - who is at risk of corona virus?
+- intent: covid_mask
+  examples: |
+    - masks
+    - why should i wear mask?
+    - benefits of wearing mask
+- intent: covid_cleaning
+  examples: |
+    - sanitizer
+    - washing
+    - why should i use sanitizer?
+    - what should i wash my hands?
+    - sanitization
+- intent: covid_precaution
+  examples: |
+    - precautions
+    - what precautions should i take for covid?
+    - precautions against corona
+- intent: covid_children
+  examples: |
+    - children in covid
+    - health risks to children?
+    - what are the health risks to children?
+- intent: fungus
+  examples: |
+    - fungus
+    - fungus during covid
+- intent: fungus_effects
+  examples: |
+    - how does fungus affect?
+    - how does fungus affect a person?
+- intent: fungus_symptoms
+  examples: |
+    - symptoms of fungal disease
+    - fungus symptoms
+- intent: fungus_prevention
+  examples: |
+    - fungus prevention
+    - how to avoid yellow fungus?
+    - how to avoid white fungus?
+    - how to avoid black fungus?
+- intent: immunity
+  examples: |
+    - how to develop immunity?
+    - how to boost immunity?
+    - food for immunity
+    - immunity against covid
+- intent: herd_immunity
+  examples: |
+    - herd immunity
+    - how to attain herd immunity?
+    - what is herd immunity?
